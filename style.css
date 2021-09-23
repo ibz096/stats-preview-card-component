@@ -9,7 +9,7 @@
     
     --white: hsl(0, 0%, 100%); /* (main heading, stats) */
     --slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /* (main heading, stats) */
-    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
+    --slightly-transparent-white2: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
 }
 
 html, body {
@@ -32,6 +32,12 @@ body {
 
 .content {
     display: flex;
+    background-color: var(--dark-desaturated-blue);
+    color: var(--white);
+}
+
+.stats {
+    padding: 100px;
 }
 
 .title {
@@ -39,16 +45,23 @@ body {
     font-weight: 700;
 }
 
+.description {
+    font-family: 'Lexend Deca';
+    color: var(--slightly-transparent-white);
+}
+
 .highlight {
-    
+    color: var(--soft-violet);
 }
 
 img {
     display: block;
+    height: 100%;
 }
 
 .numbers {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    font-family: 'Lexend Deca';
 }
