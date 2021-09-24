@@ -31,13 +31,16 @@ body {
 }
 
 .content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
     background-color: var(--dark-desaturated-blue);
     color: var(--white);
 }
 
 .stats {
-    padding: 100px;
+    padding: 70px;
+    display: grid;
+    row-gap: 50px;
 }
 
 .title {
@@ -57,11 +60,20 @@ body {
 img {
     display: block;
     height: 100%;
+    width: 100%;
 }
 
 .numbers {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 10px;
     font-family: 'Lexend Deca';
+}
+
+.stats-title {
+    display: block;
+    font-size: 24px;
+    font-family: 'Inter';
+    font-weight: 700;
 }
